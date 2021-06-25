@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY"),
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['books-manager.co.za']
+ALLOWED_HOSTS = ['boook-man.pp.ua', 'www.boook-man.pp.ua', '0.0.0.0']
 
 
 # Application definition
@@ -82,7 +82,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": os.environ.get("POSTGRES_DB"),
         "USER": os.environ.get("POSTGRES_USER"),
-        "PASSWORD": os.environ.get("POSTGRES_PASSWORD"),
+        "PASSWORD": os.environ.get("POSTGRES_PASSWORD", 'password'),
         "HOST": os.environ.get("POSTGRES_HOST", "localhost"),
         "PORT": 5432,
     }

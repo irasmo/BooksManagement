@@ -1,14 +1,9 @@
 from django.shortcuts import render, redirect
 from django.views.generic import ListView, DetailView
-from requests import post
-from rest_framework import generics
 from rest_framework.generics import get_object_or_404
-from rest_framework.renderers import TemplateHTMLRenderer
-from rest_framework.response import Response
 
 from books.form import BookForm
 from books.models import Book
-from books.serializer import BookSerializer
 
 
 class IndexView(ListView):
