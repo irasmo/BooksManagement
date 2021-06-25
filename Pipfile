@@ -4,10 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "*"
+Django = "*"
 django-widget-tweaks = "*"
-djangorestframework = "*"
 requests = "*"
+django-environ = "*"
+psycopg2-binary = "*"
+environ = "*"
+django-rest-framework = "*"
 
 [dev-packages]
 
